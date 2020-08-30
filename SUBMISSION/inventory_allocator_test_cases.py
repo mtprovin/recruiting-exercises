@@ -1,6 +1,7 @@
 import unittest
 from inventory_allocator import *
 
+
 class TestCases(unittest.TestCase):
 
     def testExample1(self):
@@ -120,6 +121,7 @@ class TestCases(unittest.TestCase):
                             {"e": {"egg": 1}}]
         actualShipment = inventoryAllocator(order, warehouses)
         self.assertEqual(expectedShipment, actualShipment)
+
 
 if __name__ == "__main__":
     unittest.main()
